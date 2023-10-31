@@ -1,0 +1,85 @@
+#tabs .tab {
+    display: inline-block;
+    padding: 5px 10px;
+    cursor: pointer;
+    position: relative;
+    z-index: 5;
+}
+#tabs .whiteborder{
+    border: 1px solid #707070;
+    border-bottom: 2px solid #fff;
+    border-radius: 3px 3px 0 0;
+}
+#tabs .tabContent{
+    width: 100%;
+    border: 1px solid #707070;
+    position: relative;
+    top:-1px;
+    z-index: 1;
+    padding: 10px;
+    border-radius: 0 0 3px 3px;
+}
+#tabs .hide{
+    display: none;
+}
+#tabs .show{
+    display: block;
+}
+#block{
+    width: 100px;
+    height: 100px;
+    background: green;;
+}
+.output-parameters{
+    display: flex;
+    margin-top: 1rem;
+}
+.output-parameters div:first-child{
+    margin-right: 2rem;
+}
+#completedCode{
+    width: 80%;
+    height: 16px;
+    resize:none;
+}
+
+#boxShadowCode{
+    width: 80%;
+    height: 16px;
+    resize:none;
+}
+#boxSizingCode{
+    width: 80%;
+    height: 16px;
+    resize:none;
+}
+
+#editTextCode1{
+    width: 80%;
+    height: 16px;
+    resize:none;
+}
+
+#editTextCode{
+    width: 80%;
+    height: 16px;
+    resize:none;
+}
+
+.code-area{
+    display: flex;
+    margin-left: 70px;
+    width: 30%;
+    align-items: center;
+    resize:none;
+}
+#box{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+#icon{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+}

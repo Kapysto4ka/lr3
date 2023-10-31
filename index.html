@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Лабораторна 3</title>
+  </head>
+
+
+  <body>
+    <div id="tabs">
+      <div class="tab whiteborder">border-radius</div>
+      <div class="tab">box-shadow</div>
+      <div class="tab">box-sizing</div>
+      <div class="tabContent">
+        <div class="parametrsButtons">
+          Верхній лівий радіус:
+          <input type="range" id="rtl" min="0" max="100" value="0" oninput="generate1()">
+          <input type="text" id="ttl" value="0">
+        </div>
+        <div>
+          Верхній правий радіус:
+          <input type="range" id="rtr" min="0" max="100" value="0" oninput="generate1()">
+          <input type="text" id="ttr" value="0" />
+        </div>
+        <div>
+          Нижній лівий радіус:
+          <input type="range" id="rbr" min="0" max="100" value="0" oninput="generate1()">
+          <input type="text" id="tbr" value="0" />
+        </div>
+        <div>
+          Нижній правий радіус:
+          <input type="range" id="rbl" min="0" max="100" value="0" oninput="generate1()">
+          <input type="text" id="tbl" value="0" />
+        </div>
+        <div class="output-parameters">
+          <div id="block"></div>
+          <div class="code-area">
+            Code: <textarea id="completedCode" oninput="applyStylesFromTextarea()" readonly="false"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="tabContent">
+        <div class="parametrsButtons">
+          offset-x:
+          <input type="range" id="offsetX" min="0" max="100" value="0" oninput="generateBoxShadow()">
+          <input type="text" id="offsetXValue" value="0">
+        </div>
+        <div>
+          offset-y:
+          <input type="range" id="offsetY" min="0" max="100" value="0" oninput="generateBoxShadow()">
+          <input type="text" id="offsetYValue" value="0">
+        </div>
+        <div>
+          blur-radius:
+          <input type="range" id="blurRadius" min="0" max="100" value="0" oninput="generateBoxShadow()">
+          <input type="text" id="blurRadiusValue" value="0">
+        </div>
+        <div>
+          spread-radius:
+          <input type="range" id="spreadRadius" min="0" max="100" value="0" oninput="generateBoxShadow()">
+          <input type="text" id="spreadRadiusValue" value="0">
+        </div>
+        <div class="output-parameters">
+          <div id="box"></div>
+          <div class="code-area">
+            Code:<textarea id="boxShadowCode" readonly="false"></textarea>
+          </div>
+        </div>
+      </div>   
+
+      <div class="tabContent">
+        <div class="parametrsButtons">
+            box-sizing:
+            <select id="box-sizing" oninput="generateBoxSizing()">
+              <option value="content-box">content-box;</option>
+              <option value="border-box">border-box;</option>
+            </select>
+        </div>
+        <div>
+          width:
+          <input type="range" id="width" min="0" max="100" value="0" oninput="generateBoxSizing()">
+          <input type="text" id="widthValue" value="0">
+        </div>
+        <div>
+          border:
+          <input type="range" id="borderColor" min="0" max="100" value="0" oninput="generateBoxSizing()">
+          <input type="text" id="borderColorValue" value="0">
+        </div>
+        <div>
+          padding:
+          <input type="range" id="padding" min="0" max="100" value="0" oninput="generateBoxSizing()">
+          <input type="text" id="paddingValue" value="0">
+        </div>
+        <div class="output-parameters">
+          <div id="icon"></div>
+          <div class="code-area">
+            Code:<textarea id="boxSizingCode" readonly="false"></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
